@@ -1,0 +1,12 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --beige: rgb(241, 221, 191);
+    --navy: rgb(83,95,118);
+    --green: rgb(120, 147, 138);
+    --green-light: rgb(146, 186, 146);
+}
