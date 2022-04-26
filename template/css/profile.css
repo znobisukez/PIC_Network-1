@@ -1,0 +1,159 @@
+.container {
+    /* background-image: url("/template/img/cover_photo_01.png"); */
+    /* background-color: black; */
+}
+
+.main_profile {
+    position: relative;
+}
+
+.cover_photo {
+    position: relative;
+    text-align: center;
+}
+
+.cover_photo>img {
+    width: 100%;
+    /* height: ; */
+}
+
+.avatar_photo {
+    position: absolute;
+    top: calc(100% - 125px);
+    left: 100px;
+}
+
+.check {
+    position: absolute;
+    padding: 3px 5px;
+    border-radius: 150px;
+    background-color: var(--green-light);
+    top: calc(100% - 15px);
+    left: calc(100% - 140px);
+}
+
+.avatar_photo>img {
+    height: 250px;
+    width: 250px;
+    border-radius: 125px;
+}
+
+.profile_info {
+    position: absolute;
+    left: 100px;
+    width: 250px;
+    top: calc(100% + 150px);
+}
+
+.info__name{
+    text-align: center;
+}
+
+.info__line{
+    position: absolute;
+    border: 1px solid #333;
+    display: inline-block;
+    height: 40px;
+    left: calc(100% - 125px);
+}
+
+.info__dot{
+    position: absolute;
+    left: calc(100% - 132px);
+    top: calc(100% + 25px);
+}
+
+.table__content{
+    background-color: var(--green-light);
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.info__bio{
+    position: absolute;
+    top: calc(100% + 34px);
+}
+
+.table__content__head{
+    margin: 10px auto;
+}
+
+.table__content__content{
+    margin-bottom: 10px;
+}
+
+.info__line__bio{
+    position: absolute;
+    border: 1px solid #333;
+    display: inline-block;
+    height: 40px;
+    left: calc(100% - 125px);
+    top: calc(100% + 106px);
+}
+
+.info__dot__bio{
+    position: absolute;
+    left: calc(100% - 132px);
+    top: calc(100% + 130px);
+}
+
+.info__information{
+    position: absolute;
+    top: calc(100% + 138px);
+}
+
+.information__content__list{
+    list-style-type: none;
+    text-align: start;
+    padding-left: 15px;
+}
+
+.list__icon{
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+}
+
+.list__icon >  svg{
+    width: 100%;
+    height: 100%;
+}
+
+li > div {
+    display: inline-block;
+    width: 16px;
+}
+
+.list__info{
+    font-weight: bold;
+}
+
+.list__info > a {
+    text-decoration: none;
+    color: #000;
+}
+
+.main_gallery{
+    position: relative;
+    left: 400px;
+}
+
+.gallery__func__list{
+    list-style-type: none;
+}
+
+.gallery__func__list{
+    width: 16px;
+    height: 16px;
+}
+
+.gallery__func__list > li > svg{
+    width: 100%;
+    height: 100%;
+}
+
+.gallery__func__list > li > svg:hover{
+    color: red;
+    cursor: pointer;
+}
