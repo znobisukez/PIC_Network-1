@@ -18,9 +18,12 @@
 }
 
 .avatar_photo {
-    position: absolute;
-    top: calc(100% - 125px);
+    position: fixed;
+    top: 125px;
     left: 100px;
+    height: 250px;
+    width: 250px;
+    border-radius: 150px;
 }
 
 .check {
@@ -38,122 +41,230 @@
     border-radius: 125px;
 }
 
-.profile_info {
-    position: absolute;
+.photo__upload {
+    position: fixed;
+    top: 125px;
     left: 100px;
+    height: 250px;
     width: 250px;
-    top: calc(100% + 150px);
+    border-radius: 150px;
+    opacity: 0;
 }
 
-.info__name{
+.upload__background{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.5;
+    border: 2px solid #000;
+    border-radius: 150px;
+}
+
+.photo__upload > svg{
+    position: fixed;
+    top: 223px;
+    left: 200px;
+    width: 50px;
+    height: 50px;
+}
+
+.photo__upload:hover{
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.profile_info {
+    position: fixed;
+    top: 400px;
+    left: 100px;
+    /* top: calc(100% + 150px); */
+}
+
+.info__name {
+    position: fixed;
+    width: 250px;
     text-align: center;
 }
 
-.info__line{
-    position: absolute;
+.info__line {
+    position: fixed;
+    left: 220px;
+    top: 450px;
     border: 1px solid #333;
     display: inline-block;
     height: 40px;
-    left: calc(100% - 125px);
+    /* left: calc(100% - 125px); */
 }
 
-.info__dot{
-    position: absolute;
-    left: calc(100% - 132px);
-    top: calc(100% + 25px);
+.info__dot {
+    position: fixed;
+    left: 213px;
+    top: 480px;
 }
 
-.table__content{
+.table__content {
     background-color: var(--green-light);
     border-radius: 5px;
     width: 100%;
     text-align: center;
 }
 
-.info__bio{
-    position: absolute;
-    top: calc(100% + 34px);
+.info__bio {
+    position: fixed;
+    top: 490px;
+    width: 250px;
 }
 
-.table__content__head{
+.table__content__head {
     margin: 10px auto;
 }
 
-.table__content__content{
+.table__content__content {
     margin-bottom: 10px;
 }
 
-.info__line__bio{
-    position: absolute;
+.info__line__bio {
+    position: fixed;
     border: 1px solid #333;
     display: inline-block;
     height: 40px;
-    left: calc(100% - 125px);
-    top: calc(100% + 106px);
+    left: 220px;
+    top: 562px;
 }
 
-.info__dot__bio{
-    position: absolute;
-    left: calc(100% - 132px);
-    top: calc(100% + 130px);
+.info__dot__bio {
+    position: fixed;
+    left: 213px;
+    top: 590px;
 }
 
-.info__information{
-    position: absolute;
-    top: calc(100% + 138px);
+.info__information {
+    position: fixed;
+    top: 600px;
+    width: 250px;
 }
 
-.information__content__list{
+.information__content__list {
     list-style-type: none;
     text-align: start;
     padding-left: 15px;
 }
 
-.list__icon{
+.list__icon {
     margin-right: 5px;
     width: 16px;
     height: 16px;
 }
 
-.list__icon >  svg{
+.list__icon>svg {
     width: 100%;
     height: 100%;
 }
 
-li > div {
+li>div {
     display: inline-block;
     width: 16px;
 }
 
-.list__info{
+.list__info {
     font-weight: bold;
 }
 
-.list__info > a {
+.list__info>a {
     text-decoration: none;
     color: #000;
 }
 
-.main_gallery{
+.main_gallery {
     position: relative;
     left: 400px;
 }
 
-.gallery__func__list{
+.gallery__func {
+    margin: 10px auto 10px auto;
+}
+
+.gallery__func__list {
     list-style-type: none;
 }
 
-.gallery__func__list{
+.gallery__func__list {
     width: 16px;
     height: 16px;
 }
 
-.gallery__func__list > li > svg{
+.gallery__func__list>li>svg {
     width: 100%;
     height: 100%;
 }
 
-.gallery__func__list > li > svg:hover{
+.gallery__func__list>li>svg:hover {
     color: red;
     cursor: pointer;
+}
+
+.gallery__body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-right: 540px;
+    background-color: #ccc;
+}
+
+.body__item {
+    position: relative;
+    background-color: #fff;
+    padding: 5px;
+    margin: 15px;
+}
+
+.item__image {
+    position: relative;
+}
+
+.item__image>img {
+    width: 230px;
+    height: 260px;
+}
+
+.interactive {
+    margin: auto 10px;
+}
+
+.interactive__item {
+    display: inline-block;
+    text-align: center;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.interactive__item>p {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.item__share {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    
+    /* bottom: calc(100% - 30px);
+    left: calc(100% - 30px); */
+}
+
+.share__icon {
+    cursor: pointer;
+    position: absolute;
+    bottom: calc(100% - 20px);
+    left: calc(100% - 20px);
+}
+
+.item__image:hover .item__share{
+    /* display: block; */
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
 }
